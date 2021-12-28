@@ -1,0 +1,6 @@
+[submodule "KaspaServices"]
+	path = KaspaServices
+	url = https://github.com/Mata-Elang-Stable/KaspaServices.git
+[submodule "KaspaClient"]
+	path = KaspaClient
+	url = https://github.com/Mata-Elang-Stable/KaspaClient.git
