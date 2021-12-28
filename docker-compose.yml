@@ -1,0 +1,18 @@
+version: "3.2"
+
+services:
+  kaspaclient:
+    build: ./KaspaClient/
+    container_name: kaspaclient
+    hostname: kaspaclient
+    ports:
+      - "8800:5000"
+    env_file:
+      - ./KaspaClient/kaspaclient.env
+
+  kaspaservices:
+    build: ./KaspaServices/
+    container_name: kaspaservices
+    hostname: kaspaservices
+    env_file:
+      - ./KaspaServices/kaspaservices.env
